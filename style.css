@@ -1,0 +1,273 @@
+/*
+
+#f0ebe7 Vit
+#383740 Mörkgrå
+#aba8a6 LjusGrå
+#d7a35d Orange
+#6b432a Brun
+
+
+
+#f2f2f2 backgroundddd 
+*/
+  
+body {
+    height: 100vh;
+
+    font-size: 15px;
+    font-family: sans-serif;
+
+    background-color: #f2f2f2;
+}
+
+.page-wrapper {
+    flex-direction: column-reverse;
+}
+
+.page-wrapper, .second-wrapper {
+    display: flex;
+    margin: 0 auto;
+
+    min-height: 100vh;
+    max-width: 100vw;
+
+    scroll-snap-align: start;
+}
+
+
+.container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+
+
+
+/*
+ASIDE
+*/
+
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    height: 100vh;
+    width: 100%;
+    background-color: #f0ebe7;
+}
+
+.img-container {
+
+    height: auto;
+    width: 70%;
+
+
+    overflow: hidden;
+
+    border-radius: 50%;
+
+    margin-top: 2em;
+}
+
+.img-container img, .header-img-container img {
+    height: 100%;
+    width: 100%;
+
+}
+
+.img-container img {
+    display: none;
+}
+
+section {
+    
+
+    width: 80%;
+
+    height: 10em;
+    margin-top: 4em;
+
+    font-size: 0.9em;
+
+    line-height: 1.5em;
+}
+
+section h2 {
+
+    padding: .5em 1em;
+    margin-bottom: .5em;
+
+
+    background-color: #383740;
+    color: #f0ebe7;
+    font-weight: bold;
+}
+
+section p {
+    padding: 0em 1em;
+}
+
+
+/*
+RIGHT CONTAINER
+*/
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    background-color: red;
+}
+
+/*
+HEADER
+*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+
+    width: 100%;
+    height: 20em;
+
+    color: white;
+    background-color: #383740;
+}
+
+.header-img-container {
+
+    height: auto;
+    width: 8em;
+
+
+    overflow: hidden;
+
+    border-radius: 50%;
+}
+
+header h1 {
+    
+    color: #f0ebe7;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+header h3 {
+    font-size: 1.5em;
+}
+
+/*
+MAIN
+*/
+
+main {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 88vh;
+    width: 100%;
+
+    color:#383740;
+    background-color: white;
+}
+
+.header-description {
+    font-style: italic;
+    font-size: 0.9rem;
+}
+main section h3 {
+    
+    padding: 0em 1em;
+    
+    font-weight: bold;
+}
+
+/*
+.second-wrapper {
+    background-color: red;
+}
+*/
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body {
+        /* background-color: orange; */
+        font-size: 10px;
+    }
+    .page-wrapper, .second-wrapper {
+        height: 100vh;
+        flex-direction: row;
+        max-width: 60vw;
+    }
+    aside {
+        justify-content: start;
+        height: auto;
+        width: 35%;
+    }
+    .img-container {
+        width: 55%;
+    }
+    .img-container img {
+        display: block;
+    }
+    aside section {
+        height: 10em;
+        margin-top: 4em;
+    }
+    .right-container {
+        width: 65%;
+    }
+    header {
+        height: 20%;
+    }
+    .header-img-container {
+        display:none;
+    }
+    main {
+        justify-content: start;
+        height: 80%;
+    }
+    .scroll-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1408px) {
+    body {
+        /*background-color: blue;*/
+        font-size: 18px;
+    }
+    .page-wrapper {
+        max-width: 60vw;
+    }
+    aside section {
+        height: 10em;
+        margin-top: 4em;
+    }
+    header {
+        height: 15%;
+    }
+    main {
+        height: 85%;
+    }
+    
+}
