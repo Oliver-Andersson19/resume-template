@@ -237,10 +237,9 @@ main section h3 {
     }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1408px) {
+@media only screen and (min-width: 1208px) {
     body {
-        /*background-color: blue;*/
-        font-size: 18px;
+        font-size: 14px;
     }
     .page-wrapper {
         max-width: 60vw;
